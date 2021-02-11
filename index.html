@@ -1,0 +1,309 @@
+<html>
+    <title>
+        Registration
+    </title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <script src="./bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=PT+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap" rel="stylesheet">   
+    </head>
+    <body>
+        <!--  Login form  -->
+
+    <section >
+        <div class="container bg-dark">
+            <div class="row">
+                <div class="col-md-6 home-back">
+                    <div>
+                        <h1 class="text">Welcome to the College Of Computation</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <form>
+                            <div class="row">
+                                <h2 style="text-align:center">Follow Us On</h2>
+                                <div class="col">
+                                    <a href="#" class="fb btn">
+                                        <i class="fa fa-facebook fa-fw"></i> Follow Us On Facebook
+                                    </a>
+                                    <a href="#" class="twitter btn">
+                                        <i class="fa fa-twitter fa-fw"></i> Follow Us On Twitter
+                                    </a>
+                                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                        </i> Follow Us On Google+
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- //end  Login form -->
+
+ <!-- Registration Form -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="top">
+                <form class=" container bg-info">
+                    <div> <h4>Student Registration Form</h4>
+                        <p><span><b>* </b> All The Block Should Be Filled Carefully All Blocks Are Compulsory </span>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>First Name :<span>*</span></p>
+                                <input type="text" class="form-control" id=first_name placeholder="First name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Last Name :</p>
+                                <input type="text" class="form-control" placeholder="Last name"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-up">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Center Name(choose at least 2)<span>*</span></p>
+                                <div id=check_box>
+                                    <div class="form-check form-check-inline marg">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input marg-sm" type="checkbox" id="box1" value="option1" name="check" onclick="setValue(id)"> Delhi 
+                                        </label><br>
+                                      </div>
+                                      <div class="form-check form-check-inline marg">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input marg-sm" type="checkbox" id="box2" value="option2" name="check" onclick="setValue(id)"> Ranchi
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline marg">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input marg-sm" type="checkbox" id="box3" value="option3" name="check" onclick="setValue(id)"> Dehradun 
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline marg">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input marg-sm" type="checkbox" id="box4" value="option3" name="check" onclick="setValue(id)"> Mohali 
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <div class="col-md-12">
+                            <p>Email Address <span>*</span></p>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="email" placeholder="eg:Aman@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="space-up">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Password<span>*</span></p>
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="password" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Confirm password<span>*</span></p>
+                                <input type="password" class="form-control mb-2 mr-sm-2" id="conf_password"
+                                    placeholder="password" required> 
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <p>Upload your file<span>*</span></p>
+                                    <input type="file" name="dataFile" id="fileChooser" onchange="return ValidateFileUpload()" />
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="space-up">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Short Summary<span>*</span></p>
+                                <div class="input-group mb-2 mr-sm-2">
+                                    <input type="text" class="form-control" id="message"
+                                        placeholder="write short summary about your self.." style="padding: 40px;text-align: center;" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- next button -->
+                     <div class="form-group row ">
+                        <div class="col-sm-10 space-lg" style="margin: 0px auto;">
+                          <button type="submit" class="btn btn-success butt-size" id="reg-1" onclick="validate()">submit</button>
+                        </div>
+                      </div>
+                      <!-- //end next -->
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="body-cover"></div>
+        </div>
+    </div>
+</div>
+<!-- //close -->
+    </body>
+    <script>
+        var array = new Array();
+        var valid=0;
+
+
+       function setValue(id)
+       {
+        var value=id;
+        array.push(value);
+       }
+
+      function validate()
+      {
+        var f_name=document.getElementById("first_name").value;
+        var pass=document.getElementById("password").value;
+        var c_pass=document.getElementById("conf_password").value;
+        var email=document.getElementById("email").value;
+        var msg=document.getElementById("message").value;
+       // var fname=document.getElementById("first_name").value;
+       var mail_format = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      
+
+        if(f_name!="" && f_name!=null)
+        {
+            if(f_name.trim().length>=3){
+                valid++;
+                console.log("first name ok")
+            }
+            else{
+                console.log("first name is always greater then 3 character");
+             }
+            
+        }else{
+            console.log("please fill the name box");
+             }
+
+        if(pass!="" && pass!=null)
+        {
+            if(pass.length===8){
+                valid++;
+                console.log("password is ok")
+            }
+            else{
+                console.log("password is off only 8 character");
+             }
+            
+        }  else{
+            console.log("please fill the password box");
+             }
+
+        if(c_pass!="" && c_pass!=undefined)
+        {
+            if(c_pass===pass){
+                valid++;
+                console.log("confirm password is ok")
+            }
+            else{
+                console.log("confirm password is always same as password");
+             }
+            
+        }else{
+            console.log("please fill the confirm password box");
+             }
+
+        if(msg!="" && msg!=undefined)
+        {
+            if(msg.trim().length<=50 && msg.trim().length>0){
+                valid++;
+                console.log("message is ok")
+            }
+            else{
+                console.log("max 50 words");
+             }
+            
+        } else{
+            console.log("please fill the message box");
+             }
+
+        if(email.trim()!=null && email!="")
+        {
+            if(email.match(mail_format)){
+                valid++;
+                console.log("email is ok")
+            } else{
+                console.log("please write the correct email");
+             }
+            
+        } else{
+            console.log("please fill the email box");
+             }
+
+        if(array.length!==null)
+        {
+            if(array.length>=2)
+            {   valid++;
+                console.log("check box is ok");
+            }else{
+                console.log("choose minimum of two box")
+            }
+        } else{
+            console.log("please select the boxes");
+             }       
+           
+           
+      if(valid===7)
+        {
+            alert("your response is submitted successfully")
+        }else{
+            alert("please fill correct data")
+        }  
+      }
+    //   && pass!==null && c_pass!== null && email!==null && msg!==null
+
+    function ValidateFileUpload() {
+        var fileData = document.getElementById('fileChooser').value;
+
+        if (fileData == '') {
+            alert("Please upload an image");
+
+        } else {
+            var Extension = fileData.substring(fileData.lastIndexOf('.') + 1).toLowerCase();
+
+if (Extension == "gif" || Extension == "png" || Extension == "bmp"
+                    || Extension == "jpeg" || Extension == "jpg") {
+                        valid++;
+                        console.log("file is ok");
+                if (fileData.files && fileData.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(fileData.files[0]);
+                }
+
+            } 
+
+else {
+                alert("Photo only allows file types of GIF, PNG, JPG, JPEG and BMP. ");
+                console.log("choose correct file");
+
+            }
+        } 
+    }
+
+
+   </script>
+</html>

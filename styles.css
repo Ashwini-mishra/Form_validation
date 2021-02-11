@@ -1,0 +1,135 @@
+body {
+font-family: 'Raleway', sans-serif !important;
+font-family: 'Roboto', sans-serif !important;
+padding: 0px;
+margin: 0px;
+}
+.container{
+    padding: 30px !important;
+}
+  p{
+      font-size: 16px !important;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* style the container */
+  .container {
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+  } 
+
+  .body-cover{
+    background-image: url("images/address.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+  }
+  
+  /* style inputs and link buttons */
+  input,select,
+  .btn {
+    width: 100%;
+    padding: 2px;
+    border: 2px solid black !important;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */;
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+    background-color: #47caf0;
+  }
+  button{
+    box-shadow: 2px 6px 0px 0px black;
+  }
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998 !important;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE !important;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39 !important;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50 !important;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Two-column layout */
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+  
+
+  /* home background image */
+
+    .home-back{
+        background-image: url("images/banner.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    h1.text{
+        padding: 30px;
+        margin: 50px auto;
+        color: white;
+    }
+    h4{
+        color: white !important;
+        text-align: center;
+        font-size: 12px;
+    }
+    span{
+        color: red !important;
+        text-align: center;
+        font-size: 12px;
+    }
+  .marg
+  {
+      margin: 0px 20px;
+  }
+  
+.butt-size{
+    width:100%; 
+    text-align: center !important;
+    margin-top: 10px;
+}
+
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    
+    .butt-size{
+        width:100%; 
+        float: right; 
+        margin-top: 0px;
+    }
+  }
